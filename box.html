@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="appe ">
+    <title>Bouxx</title>
+    <style>
+        * {
+            --color1: ;
+        }
+
+        #head-bauxx {
+
+            position: fixed;
+            top: 0;
+            left: 80px;
+
+            width: 40%;
+
+            box-sizing: border-box;
+        }
+
+        #head-fig {
+            position: relative;
+            left: 80%;
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        .moon {
+            position: RELATIVE;
+            right: -150px;
+
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 20px 20px black;
+
+
+        }
+
+        .center-box {
+            position: relative;
+            --color1: rgb(50, 44, 61);
+            margin: auto;
+            margin-top: 50px;
+            width: 450px;
+            border: solid gray 1px;
+            padding: 20px;
+            padding-bottom: 100px;
+            text-align: justify;
+            transform: scale(1);
+            transform: skewX(5deg);
+
+        }
+
+        .center-box:hover {
+            transform: scale(1.2) skewY(-5deg);
+
+        }
+
+        .center-box p {
+            line-height: 25px;
+        }
+
+
+
+        .center-box h1 {
+            position: relative;
+            bottom: 10px;
+            text-transform: uppercase;
+            color: var(--color1, rgb(71, 69, 69));
+            text-align: center;
+            font-family: 'Sansita Swashed', cursive;
+
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .list-block {
+            float: left;
+            width: 50%;
+            border: solid 3px chocolate;
+            box-sizing: border-box;
+            padding: 10px;
+            background: linear-gradient(35deg, #ccffff, #ffcccc);
+            color: #ccc;
+            opacity: 0.7;
+
+
+        }
+
+        #box-1 {
+            box-shadow: 10px 10px rgb(219, 219, 219);
+            border-radius: 2%;
+
+        }
+
+        .list-block li,
+        .list-block a {
+            list-style: none;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .heart {
+            position: absolute;
+
+            background: repeating-linear-gradient(pink 20px, rgb(255, 163, 163) 40px, rgb(252, 129, 129) 60px);
+            height: 100px;
+            width: 100px;
+            top: 50px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin-left: -15px;
+            transform: rotate(-45deg);
+            animation-name: heart;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .heart::after {
+            content: "";
+            position: absolute;
+            left: 50px;
+            background: repeating-linear-gradient(pink 20px, rgb(255, 163, 163) 40px, rgb(252, 129, 129) 60px);
+            height: 100px;
+            width: 100px;
+            transform: rotate(45deg);
+            border-radius: 50%;
+
+        }
+
+        .heart::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            background: repeating-linear-gradient(pink 20px, rgb(255, 163, 163) 40px, rgb(252, 129, 129) 60px);
+            height: 100px;
+            width: 100px;
+            bottom: 50px;
+            border-radius: 50%;
+
+        }
+
+        @keyframes heart {
+            50% {
+                transform: scale(1.3) rotate(-45deg);
+
+            }
+        }
+
+        #animation {
+            margin: auto;
+            margin-top: 35px;
+            width: 150px;
+            font-size: 20px;
+            text-align: center;
+            border: solid 3px gray;
+            left: 50px;
+
+
+        }
+
+        #animation:hover {
+            animation-name: subi;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes subi {
+            0% {
+                background-color: #ffcccc;
+                font-size: 22px;
+
+            }
+
+            100% {
+                background-color: aliceblue;
+                font-size: 26px;
+
+            }
+        }
+
+        #animation-2 {
+            background: linear-gradient(35deg, skyblue, rgb(214, 214, 255));
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 30px auto;
+            position: absolute;
+            top: 98%;
+            left: 20%;
+            animation-name: ball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes ball {
+
+            50% {
+                left: 80%;
+                opacity: 0;
+            }
+
+        }
+
+
+        #square {
+            height: 80px;
+            width: 80px;
+            border: black 3px solid;
+            margin: 145px 30%;
+            position: absolute;
+            animation-name: spinn;
+            animation-duration: 4s;
+            animation-iteration-count: infinite
+        }
+
+        @keyframes spinn{
+            50%{
+                margin-left: 60%;
+                transform: scale(2.5) rotate(300deg);
+            }
+        }
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="head-bauxx">
+        <h1>Bauxxxx</h1>
+    </div>
+    <div id="head-fig">
+        <div class="heart">
+
+        </div>
+
+        <div class="moon">
+
+        </div>
+    </div>
+    <div class="center-box" id="box-1">
+        <h1>box</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem error qui ipsam optio necessitatibus
+            aperiam in et consequatur <strong>asperiores animi</strong> doloribus mollitia totam nulla, omnis,
+            accusantium reiciendis
+            cupiditate minima nihil ex pariatur distinctio similique repellendus voluptates! Culpa earum in recusandae,
+            omnis illum voluptatum labore distinctio assumenda vitae molestias minima?</p>
+
+        <div class="list-block">
+            <ul>
+                <li>
+                    <a href="#">link 1</a>
+                </li>
+                <li><a href="#">link 1</a></li>
+            </ul>
+        </div>
+        <div class="list-block">
+            <ul>
+                <li>
+                    <a href="#">link 1</a>
+                </li>
+                <li><a href="#">link 1</a></li>
+            </ul>
+        </div>
+        </ul>
+
+    </div>
+    <br>
+    <br>
+    <div id="animation">
+        <h4>SubiDON</h4>
+    </div>
+
+    <div id="animation-2">
+
+
+
+    </div>
+    <br>
+    <div id="square">
+        
+    </div>
+
+    <div style="margin-top: 500px;"></div>
+
+    </div>
+</body>
+
+</html
